@@ -13,15 +13,6 @@ function buscarUsuarios(req, res){
     return res.status(200).json({sucesso: "Ok! Aqui está sua lista atual de usuários", usuarios})
 }
 
-function login (req, res ){
-const {email, senha} = req.body
-const usuarioModel = usuariosModel.login(email, senha)
 
-if(usuarioModel === null){
-     return res.status(400).json({erro: "Este email e senha não existem. Verifique se já realizou o cadastro"})
-}
-return res.status(200).json({sucesso: "Login efetuado com sucesso!"})
 
-}
-
-module.exports = {cadastrarUsuario, buscarUsuarios, login}
+module.exports = {cadastrarUsuario, buscarUsuarios}
