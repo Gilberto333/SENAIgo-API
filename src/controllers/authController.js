@@ -17,7 +17,6 @@ if(usuarioLogin === null){
 
 )
 
-
 return res.status(200).json({sucesso: 'Login efetuado com sucesso', usuarioLogin, token})
 
 }

@@ -13,6 +13,4 @@ function buscarUsuarios(req, res){
     return res.status(200).json({sucesso: "Ok! Aqui está sua lista atual de usuários", usuarios})
 }
 
-
-
 module.exports = {cadastrarUsuario, buscarUsuarios}
