@@ -14,4 +14,25 @@ function salvarVisita(usuario, id, salaId, sala, pontos) {
   return localVisitado
 }
 
-module.exports = { salvarVisita }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function listarVisitas (){
+    return historicoVisitas
+}
+
+module.exports = { salvarVisita, listarVisitas }

@@ -13,4 +13,36 @@ function registrarVisitas(req, res) {
   return res.status(201).json({ sucesso: "Visita registrada com sucesso!", localDeVisita })
 }
 
-module.exports = { registrarVisitas }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function listarVisitas (req, res){
+const todasVisitas = visitasModel.listarVisitas()
+if(todasVisitas === null){
+    return res.josn({erro: "nao tem"})
+}
+return res.json(todasVisitas)
+}
+
+
+module.exports = { registrarVisitas, listarVisitas }

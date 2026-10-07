@@ -5,7 +5,7 @@ const server = express()
 const PORTA = process.env.PORT || 3000
 const usuarioRoutes = require("./src/routes/usuariosRouter")
 const logger = require('./src/middlewares/logger')
-const validarContentType = require("./src/middlewares/validarContentType")
+const validarContentType = require("./src/middlewares/validarContetType")
 const authRotas = require('./src/routes/authRouter')
 const visitasRoutes = require("./src/routes/locaisVisitasRouter")
 
