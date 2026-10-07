@@ -15,10 +15,6 @@ return usuario
 
 }
 
-function buscarUsuarios (){
-    return listaUsuarios
-}
-
 function login (email, senha){
     const logarUsuario = listaUsuarios.find(u => u.email === email &&  u.senha === senha)
     
@@ -29,4 +25,7 @@ function login (email, senha){
 return logarUsuario
 }
 
-module.exports = {cadastrarUsuario, buscarUsuarios, login}
+
+
+
+module.exports = {cadastrarUsuario, login}
