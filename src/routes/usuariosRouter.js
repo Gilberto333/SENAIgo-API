@@ -4,8 +4,9 @@ const usuariosController = require('../controllers/usuariosController')
 const validarSchema = require('../middlewares/validarSchema')
 const schema = require('../middlewares/schema')
 const validarCpf = require("../middlewares/validarCPF")
+const verificarCadastro = require("../middlewares/verificarCadastroUsuario")
 
-router.post("/cadastrarUsuario",validarSchema(schema.cadastro) ,validarCpf,usuariosController.cadastrarUsuario)
+router.post("/cadastrarUsuario",validarSchema(schema.cadastro) ,validarCpf,verificarCadastro,usuariosController.cadastrarUsuario)
 
 
 module.exports = router
