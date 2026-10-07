@@ -6,11 +6,6 @@ const middlewareVerificarVisita = require("../middlewares/VerificarVisitas")
 router.post("/registrarLocal", middlewareAutenticar,middlewareVerificarVisita ,visitasController.registrarVisitas)
 
 
-
-
-
-
-
 router.get("/locais", visitasController.listarVisitas)
 
 module.exports = router

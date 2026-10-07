@@ -15,22 +15,6 @@ function salvarVisita(usuario, id, salaId, sala, pontos) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function listarVisitas (){
     return historicoVisitas
 }

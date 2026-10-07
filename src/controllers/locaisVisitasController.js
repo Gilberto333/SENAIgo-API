@@ -14,28 +14,6 @@ function registrarVisitas(req, res) {
 }
 
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function listarVisitas (req, res){
 const todasVisitas = visitasModel.listarVisitas()
 if(todasVisitas === null){
