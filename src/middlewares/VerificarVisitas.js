@@ -5,9 +5,9 @@ function verificarVisita(req, res, next){
 const {nome, id} = req.usuario
 const {salaId, sala, pontos} = req.body
 
-const registrado = verificador.find(v => v.nome === nome || v.id === id || v.sala === sala || v.salaId === salaId || v.pontos === pontos)
+const registrado = verificador.find(v => v.id === id && v.salaId === salaId)
 if(registrado){
-    return res.status(401).json({erro: "O local já foi visitado!"})
+    return res.status(409).json({erro: "O local já foi visitado!"})
 }
 
 next()
