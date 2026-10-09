@@ -18,4 +18,5 @@ server.use('/auth', authRotas)
 server.use(usuarioRoutes)
 server.use(visitasRoutes)
 
+
 server.listen(PORTA, () => console.log(`Servidor rodando em http://localhost:${PORTA}`))
